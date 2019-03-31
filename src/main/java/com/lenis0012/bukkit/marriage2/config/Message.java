@@ -20,6 +20,7 @@ public enum Message {
     ITEM_GIFTED("&aYou have given %s of %s to your partner!"),
     GIFT_RECEIVED("&aYou have received %s of %s as a gift from your partner!"),
     PARTNER_NOT_ONLINE("&cYour partner is currently not online!"),
+    PARTNER_NEED_FREE_SLOT("&cYour partner needs to have one free slot in their inventory."),
     FETCHING_LIST("&eFetching player marriage list..."),
     HOME_SET("&aYou have set a home for your marriage!"),
     INVALID_FORMAT("&cThe argument could not be parsed to an integer!"),

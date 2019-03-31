@@ -37,6 +37,11 @@ public class CommandGift extends Command {
             return;
         }
 
+        if (-1 == partner.getInventory().firstEmpty()) {
+            reply(Message.PARTNER_NEED_FREE_SLOT);
+            return;
+        }
+
         partner.getInventory().addItem(item.clone());
         player.setItemInHand(null);
         reply(Message.ITEM_GIFTED, item.getAmount(), item.getType().toString().toLowerCase());
